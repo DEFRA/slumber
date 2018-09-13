@@ -1,0 +1,26 @@
+{
+  "name": "slumber",
+  "version": "0.0.1",
+  "description": "Selenium Webdriver + Page Object Pattern + Cucumber-based browser automation tests boilerplate project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cucumber-js",
+    "start-chrome": "npm run start -- --world-parameters='{\"browser\": \"chrome\"}'",
+    "start-firefox": "npm run start -- --world-parameters='{\"browser\": \"firefox\"}'",
+    "lint": "standard",
+    "format": "standard --fix",
+    "debug": "node --nolazy --inspect-brk=5858 node_modules/.bin/cucumber-js",
+    "test": "npm run lint"
+  },
+  "author": "defra",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "2.41.0",
+    "cucumber": "5.0.0",
+    "geckodriver": "1.12.2",
+    "selenium-webdriver": "4.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "standard": "12.0.1"
+  }
+}
